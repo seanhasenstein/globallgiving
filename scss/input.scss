@@ -1,0 +1,177 @@
+/*
+Theme Name: Globall Giving Theme
+Author: Sean Hasenstein
+Author URI: http://seanhasenstein.com
+Description: This theme is used for the non-profit charity, Globall Giving. It is developed with Bootstrap and uses Font Awesome Icons.
+Version: 1.1
+License: GNU General Public License v2 or later
+
+Use this theme to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+
+@font-face {
+  font-family: 'KGHAPPYSolid';
+  src: url('fonts/KGHAPPYSolid.eot'); /* IE9 Compat Modes */
+  src: url('fonts/KGHAPPYSolid.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       /*url('fonts/KGHAPPYSolid.woff2') format('woff2'),*/ /* Super Modern Browsers */
+       url('fonts/KGHAPPYSolid.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/KGHAPPYSolid.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/KGHAPPYSolid.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+$green: #7ed321;
+$blue: #369ff4;
+$sourceSansPro: 'Source Sans Pro', sans-serif;
+$kgHappy: 'kghappysolid', 'Source Sans Pro', sans-serif;
+
+.white {
+	color: #fff;
+}
+
+
+body, html {
+	overflow-x: hidden;
+}
+
+.border {
+	position: relative;
+	max-width: 960px;
+	margin: 70px auto;
+	border-bottom: 1px solid #eee;
+
+	img {
+		width: 65px;
+		position: absolute;
+		top: -18px;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+	}
+}
+
+.page-wrapper.homepage {
+	background: url('images/bottom-home.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.about-page {
+	background: url('images/bottom-about.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.faq-page {
+	background: url('images/bottom-faq.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.mission-page {
+	background: url('images/bottom-mission.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.recipient-page {
+	background: url('images/bottom-recipient.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.founder-page {
+	background: url('images/bottom-founder.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.team-page {
+	background: url('images/bottom-team.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.request-page {
+	background: url('images/bottom-request.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.volunteer-page {
+	background: url('images/bottom-volunteer.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.collection-page {
+	background: url('images/bottom-organize.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.partner-page {
+	background: url('images/bottom-partner.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.equipment-page {
+	background: url('images/bottom-donate.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.page-wrapper.locations-page {
+	background: url('images/bottom-dropoff.jpg') no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 470px;
+    padding: 0 0 42%;
+}
+
+.photo-page, .video-page, .contact-page {
+    margin-top: 4px !important;
+}
+
+
+@import 'navigation';
+@import 'home-content';
+@import 'stats-section';
+@import 'impact-section';
+@import 'stories-section';
+@import 'sponsors-section';
+@import 'page-template-1';
+@import 'getInvolved-page';
+@import 'forms';
+@import 'subscribe-section';
+@import 'sitemap-page';
+@import 'footer';
+
+@import 'golf-modal';

@@ -1,0 +1,134 @@
+
+
+
+// page-sitemap.scss
+
+
+
+
+
+
+
+.page-wrapper .sitemap-page {
+	background: #fff;
+
+	@media screen and (max-width: 1014px) {
+		margin: 0 10px;
+	}
+
+	.sitemap-page {
+	   
+	    margin: 0 auto;
+	    padding-bottom: 50px;
+
+	    h3 {
+			font-family: 'kghappysolid';
+		    font-size: 28px;
+		    margin-top: 30px;
+		    margin-bottom: 45px;
+		    text-align: center;
+		    text-transform: uppercase;
+		    text-shadow: 2px 2px 0 #ddd;
+
+		    @media screen and (max-width: 550px) {
+	    		text-align: left;
+	    		padding-left: 20px;
+	    	}
+	    }
+
+	     p.first {
+	     	font-family: 'Source Sans Pro', sans-serif;
+	    	text-align: center;
+	    	font-weight: 300;
+	    	margin-bottom: 0;
+	    	font-size: 16px;
+	    	font-weight: 300;
+
+	    	@media screen and (max-width: 550px) {
+	    		text-align: left;
+	    		padding-left: 20px;
+	    	}
+	    }
+
+	    .content {
+	    	max-width: 530px;
+	    	margin: 0 auto;
+
+		    @media screen and (max-width: 820px) {
+		    	width: 100%;
+		    }
+
+		    @media screen and (max-width: 540px) {
+		    	padding: 10px 10px 40px;
+		    }
+
+	    	
+
+	    	.column1 {
+	    		width: 245px;
+	    		float: left;
+	    		margin-right: 40px;
+
+	    		@media screen and (max-width: 550px) {
+	    			width: 100%;
+	    			margin: 0 auto;
+	    			padding-left: 20px;
+	    			
+	    		}
+	    	}
+
+	    	.column2 {
+	    		width: 200px;
+	    		float: left;
+	    		margin-left: 40px;
+
+	    		@media screen and (max-width: 550px) {
+	    			width: 100%;
+	    			margin: 0 auto;
+	    			padding-left: 20px;
+	    		}
+	    	}
+
+	    	h4 {
+				font-family: 'kghappysolid';
+			    font-size: 15px;
+			    color: #333;
+    		}
+
+	    	p {
+	    		font-family: 'Source Sans Pro', sans-serif;
+			    font-size: 16px;
+			    font-weight: 300;
+			    line-height: 24px;
+			    margin-bottom: 5px;
+
+			    &.head {
+			    	margin-top: 40px;
+			    	font-family: 'kghappysolid', 'Source Sans Pro', sans-serif;
+			    	font-size: 16px;
+			    	color: #333;
+			    }
+
+			    &.sub {
+			    	margin-left: 20px;
+			    }
+	    	}
+
+	    	a {
+		    	color: #333;
+		    	-moz-transition: color 300ms ease-out;
+		    	-webkit-transition: color 300ms ease-out;
+		   		-ms-transition: color 300ms ease-out;
+		    	transition: color 300ms ease-out;
+
+		    	&:hover {
+		    		color: #666;
+		    	}
+
+		    	&:active, &:focus {
+		    		text-decoration: none;
+		    	}
+		    }
+	    }
+	}
+}

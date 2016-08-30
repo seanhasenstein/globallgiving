@@ -1,0 +1,540 @@
+
+
+
+// _footer.scss
+
+
+
+footer {
+	padding: 40px 0 0;
+	background-color: #f5f5f5;
+	box-shadow: inset 0 1px 0px #bbb, inset 0 2px 2px rgba(0, 0, 0, 0.2);
+
+	@media screen and (max-width: 800px) {
+		padding: 0;
+		border: none;
+	}
+
+	.footer-nav {
+		display: none;
+		max-width: 100%;
+		margin: 0 auto 15px;
+
+		@media screen and (max-width: 850px) {
+			max-width: 680px;
+		}
+
+		@media screen and (max-width: 700px) {
+			max-width: 370px;
+		}
+
+		@media screen and (max-width: 800px) {
+			max-width: 100%;
+			display: block;
+		}
+
+		a.btn.btn-primary {
+			background: #343434;
+			color: #fff;
+			font-family: 'Source Sans Pro', sans-serif;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 18px;
+			box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+			width: 100%;
+			border: none;
+			border-radius: 0;
+			padding: 12px 0px;
+
+			&:hover {
+				background: #363636;
+				color: #f8f8f8;
+			} 
+
+		    i.fa.fa-caret-down {
+			    margin-left: 7px;
+			}
+		}
+
+		.well {
+		    border: none;
+		    box-shadow: none;
+		    padding-left: 0;
+		    padding-right: 0;
+		    border-bottom: 2px solid #ebebeb;
+		    border-radius: 0;
+		    width: 695px;
+		    margin: 0 auto;
+
+		    @media screen and (max-width: 740px) {
+				width: 370px;
+			}
+
+		    @media screen and (max-width: 400px) {
+		    	padding-left: 40px;
+		    }
+
+		    ul.col-1, ul.col-2, ul.col-3, ul.col-4 {
+		    	list-style-type: none;
+		    	display: inline-block;
+		    	padding: 0;
+
+		    	a {
+		    		font-family: 'Source Sans Pro', sans-serif;
+		    		font-weight: 300;
+		    		color: #333;
+		    		font-size: 16px;
+
+		    		li {
+					    margin: 7px 0;
+					}
+		    	}
+		    }
+
+		    ul.col-1 {
+
+		    	@media screen and (max-width: 800px) {
+		    		width: 180px;
+		    	}
+		    }
+
+		    ul.col-2 {
+
+		    	@media screen and (max-width: 800px) {
+		    		width: 180px;
+		    	}
+		    }
+
+		    ul.col-3 {
+
+		    	@media screen and (max-width: 800px) {
+		    		width: 180px;
+		    	}
+		    }
+
+		    ul.col-4 {
+		    	width: 140px;
+		    }
+
+		    ul.col-1, ul.col-2, ul.col-3, ul.col-4 {
+
+		    	@media screen and (max-width: 740px) {
+					width: 180px;
+				}
+
+		    	@media screen and (max-width: 400px) {
+					width: 225px;
+				}
+		    }
+		}
+	}
+
+    .footer-inner {
+	    background-color: #f5f5f5;
+	    padding-top: 25px;
+
+	    .back-to-top {
+	    	display: none;
+
+	    	@media screen and (max-width: 900px) {
+	    		display: inline-block;
+    		    width: 100%;
+				margin: 0 0 30px;
+
+	    		a {
+					color: #444;
+					font-family: 'kghappysolid', sans-serif;
+					text-shadow: 1px 1px 0 #ccc;
+
+					&:hover {
+						text-decoration: none;
+					}
+
+					i.fa.fa-caret-up {
+					    margin-left: 8px;
+					    font-size: 22px;
+					    vertical-align: middle;
+					}
+	    		}
+
+	    	}
+	    }
+	}
+
+	.footer-container {
+		max-width: 1000px;
+		margin: 0 auto;
+
+		@media screen and (max-width: 991px) {
+
+			.col-sm-4, .col-sm-3 {
+				margin-left: 4.16666667%;
+			}
+		}
+
+		@media screen and (max-width: 900px) {
+
+			.col-sm-4.logo {
+				width: 100%;
+			    padding: 0;
+			    margin: 0;
+			    text-align: center;
+			}
+
+			.col-sm-3.col-md-offset-1 {
+			    margin-top: 50px !important;
+			    text-align: center;
+			}
+
+			.contact {
+				margin-left: 25% !important;
+			}
+		}
+
+		@media screen and (max-width: 835px) {
+
+			.col-sm-3.col-md-offset-1 {
+				width: 100%;
+				margin-left: 0 !important;
+				margin-right: 0 !important;
+				padding-right: 0 !important;
+				padding-left: 0 !important;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+
+			.col-sm-3.col-md-offset-1.social {
+				padding: 0 30px !important;
+			}
+
+		}
+
+		.logo {
+		    padding-left: 60px;
+
+		    img.footer-logo {
+				width: 200px;
+				margin-bottom: 30px;
+
+			}
+
+			p.slogan {
+				font-family: 'kghappysolid', sans-serif;
+			    font-size: 16px;
+			    margin: 0;
+			    line-height: 25px;
+			    font-style: italic;
+			    font-weight: normal;
+			    color: #333;
+
+			    @media screen and (max-width: 650px) {
+			    	width: 80%;
+    				margin: 0 auto;
+			    }
+			}
+		}
+
+		h2 {
+			font-family: 'Source Sans Pro', sans-serif;
+			text-transform: uppercase;
+			font-weight: 700;
+		    font-size: 24px;
+		    margin: 0 0 22px;
+		}
+
+		.contact {
+
+			h2, p {
+				font-family: 'Source Sans Pro', sans-serif;
+				margin-bottom: 12px;
+
+				&.email {
+					margin-top: 27px;
+				}
+			}
+
+			p {
+				font-size: 16px;
+				margin: 0;
+				font-weight: 300;
+
+				a {
+					color: #333;
+				}
+			}
+		}
+
+		.social {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			float: left;
+
+			@media screen and (max-width: 700px) {
+				float: none;
+				text-align: center;
+			}
+
+			a, a:hover {
+				color: transparent;
+			}
+
+			.facebook, .twitter, .instagram, .youTube, .brightFunds, .greatPositive, .volunteerCenter, .sportsDoingGood, .givingTuesday, .sportSocialChange {
+				display: inline-block;
+				height: 40px;
+				width: 36px;
+				float: left;
+
+				@media screen and (max-width: 835px) {
+					float: none;
+				}
+			}
+
+			.facebook, .twitter, .instagram, .brightFunds, .greatPositive, .volunteerCenter, .sportsDoingGood {
+				margin-right: 10px;
+				margin-bottom: 10px;
+
+				@media screen and (max-width: 835px) {
+					margin-bottom: 0;
+					margin-top: 10px;
+				}
+			}
+
+			.givingTuesday {
+				margin-right: 10px;
+			}
+
+			.youTube {
+
+				@media screen and (max-width: 835px) {
+					margin-right: 10px;
+				}
+			}
+
+			.facebook {
+				background: url('images/iconSprite.png');
+				background-position: 0 0;
+				background-size: 360px 80px;
+			}
+
+			.facebook:active {
+				background: url('images/iconSprite.png');
+				background-position: 0 -40px;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+
+			.twitter {
+				background: url('images/iconSprite.png');
+				background-position: -36px 0;
+				background-size: 360px 80px;
+			}
+
+			.twitter:active {
+				background: url('images/iconSprite.png');
+				background-position: -36px -40px;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+
+			.instagram {
+				background: url('images/iconSprite.png');
+				background-position: -72px 0;
+				background-size: 360px 80px;
+			}
+
+			.instagram:active {
+				background: url('images/iconSprite.png');
+				background-position: -72px -40px;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+
+			.youTube {
+				background: url('images/iconSprite.png');
+				background-position: -108px 0;
+				background-size: 360px 80px;
+			}
+
+			.youTube:active {
+				background: url('images/iconSprite.png');
+				background-position: -108px -40px;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+
+			.brightFunds {
+				background: url('images/iconSprite.png');
+				background-position: -144px 0;
+				background-size: 360px 80px;
+				text-decoration: none;
+				clear: both;
+			}
+			.brightFunds:active {
+				background: url('images/iconSprite.png');
+				background-position: -144px -40px;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+			.greatPositive {
+				background: url('images/iconSprite.png');
+				background-position: -180px 0;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+			.greatPositive:active {
+				background: url('images/iconSprite.png');
+				background-position: -180px -40px;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+			.sportSocialChange {
+				background: url('images/iconSprite.png');
+				background-position: -216px 0;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+			.sportSocialChange:active {
+				background: url('images/iconSprite.png');
+				background-position: --216px -40px;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+			.volunteerCenter {
+				background: url('images/iconSprite.png');
+				background-position: -252px 0;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+			.volunteerCenter:active {
+				background: url('images/iconSprite.png');
+				background-position: -252px -40px;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+			.sportsDoingGood {
+				background: url('images/iconSprite.png');
+				background-position: -288px 0;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+			.sportsDoingGood:active {
+				background: url('images/iconSprite.png');
+				background-position: -288px -40px;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+			.givingTuesday {
+				background: url('images/iconSprite.png');
+				background-position: -324px 0;
+				background-size: 360px 80px;
+				text-decoration: none;
+				clear: both;
+			}
+			.givingTuesday:active {
+				background: url('images/iconSprite.png');
+				background-position: -324px -40px;
+				background-size: 360px 80px;
+				text-decoration: none;
+			}
+		}
+
+		.footer-bottom {
+			padding: 30px 0 0;
+		    max-width: 918px;
+		    margin: 50px auto 0;
+		    border-top: 1.5px solid #dfdfdf;
+
+		    @media screen and (max-width: 950px) {
+		    	margin-left: 5%;
+			   	margin-right: 5%;
+		    }
+
+		    @media screen and (max-width: 500px) {
+		    	border: none;
+		    	margin: 10px auto 0;
+		    }
+
+			p {
+				font-family: 'Source Sans Pro', sans-serif;
+			    font-size: 16px;
+			    font-weight: 300;
+			    float: left;
+			    margin: 0;
+
+			   @media screen and (max-width: 500px) {
+			   		text-align: center;
+			   		float: none;
+			   }
+
+			    a {
+			    	color: #333;
+
+			    	&:hover {
+			    		color: #333;
+			    	}
+			    }
+			}
+
+
+			.footerCredit {
+				margin: 0;
+				padding-bottom: 30px;
+				color: #ccc;
+			    float: right;
+			    -moz-transition: color 300ms ease-out;
+		    	-webkit-transition: color 300ms ease-out;
+		   		-ms-transition: color 300ms ease-out;
+		    	transition: color 300ms ease-out;
+
+			    @media screen and (max-width: 500px) {
+			   		text-align: center;
+				    float: none;
+				    margin: 40px auto 17px;
+				    display: block;
+			   }
+
+			   img {
+					width: 37px;
+					margin-left: 5px;
+			   }
+
+			   a {
+			   	font-family: 'Source Sans Pro', sans-serif;
+			   	color: #bbb;
+			   	font-size: 16px;
+			   	-moz-transition: color 300ms ease-out;
+		    	-webkit-transition: color 300ms ease-out;
+		   		-ms-transition: color 300ms ease-out;
+		    	transition: color 300ms ease-out;
+
+				   	&:hover {
+				   		text-decoration: none;
+				   		color: #bbb;
+
+				   		i.fa.fa-heart {
+				   			color: #EB4343;
+				   			font-size: 18px;
+				    		margin: 0 2px;
+				   		}
+					}
+
+					i.fa.fa-heart {
+					    color: #EB4343;
+					    margin: 0 3px;
+					}
+
+					span.bold {
+						color: #000;
+						font-weight: 500;
+						font-style: italic;
+					}
+
+				   	&:focus, &:active {
+				   		text-decoration: none;
+				   	}
+			   }
+			}
+		}
+	}
+}

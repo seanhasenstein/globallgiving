@@ -1,0 +1,173 @@
+
+
+
+// subscribe-section.scss
+
+
+
+.subscribe-section {
+
+	.inner {
+		max-width: 475px;
+		margin: 0 auto;
+		padding-top: 55px;
+		text-align: center;
+
+		p {
+		    font-family: 'kghappysolid', sans-serif;
+		    font-size: 17px;
+		    text-shadow: 1px 1px 0px #ddd;
+		    margin-bottom: 20px;
+
+		    @media screen and (max-width: 520px) {
+		    	margin: 0 auto 20px;
+				width: 90%;
+		    }
+		}
+
+	    .gform_body, form#gform_4, ul#gform_fields_4, li#field_4_1, .gform_footer.top_label, input#gform_submit_button_4, .ginput_container.ginput_container_email {
+	    	display: inline;
+	    }
+
+	    .page-wrapper .test-page .ginput_container.ginput_container_email {
+
+	    	@media screen and (max-width: 520px) {
+	    		display: block;
+		    	margin: 0 auto;
+		    	width: 90%;
+	    	}
+		}
+
+	    .gform_wrapper {
+	    	max-width: 100%;
+	    }
+
+	    input#input_4_1 {
+			background: #eee;
+			border: none;
+			border-bottom: 3px solid #ddd;
+			border-bottom-left-radius: 5px;
+			border-top-left-radius: 5px;
+			color: #333;
+			margin-top: 11px;
+			font-size: 15px;
+			font-family: 'Source Sans Pro', sans-serif;
+			letter-spacing: 0.3px;
+			line-height: 34px;
+			padding: 5px 0 5px 9px !important;
+			min-width: 300px;
+			border: 1px solid #aaa;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+
+			@media screen and (max-width: 520px) {
+				min-width: 90%;
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+				padding-left: 0;
+			}
+
+			&::-webkit-input-placeholder {
+			   color: #bbb;
+			   font-style: italic;
+			   letter-spacing: 1px;
+
+			   	@media screen and (max-width: 520px) {
+					text-align: center;
+				}
+			}
+
+			&::-moz-input-placeholder {
+			   color: #aaa;
+			   font-style: italic;
+			   letter-spacing: 1px;
+
+			   @media screen and (max-width: 520px) {
+					text-align: center;
+				}
+			}
+
+			&::-moz-placeholder {
+			   color: #aaa;
+			   font-style: italic;
+			   letter-spacing: 1px;
+
+			   @media screen and (max-width: 520px) {
+					text-align: center;
+				}
+			}
+
+			:-moz-placeholder {
+			   color: #aaa;
+			   font-style: italic;
+			   letter-spacing: 1px;
+
+			   @media screen and (max-width: 520px) {
+					text-align: center;
+				}
+			}
+
+			&:-ms-input-placeholder {
+			   color: #bbb;
+			   font-style: italic;
+			   letter-spacing: 1px;
+
+			   @media screen and (max-width: 520px) {
+					text-align: center;
+				}
+			}
+
+			&:focus, &:active {
+				text-decoration: none;
+				outline: none;
+				background: #e5e5e5;
+			}
+		}
+
+	    input#gform_submit_button_4 {
+			background: #7ED321;
+			border: none;
+			border-bottom: 3px solid #64B011;
+			border-radius: 0;
+			border-bottom-right-radius: 5px;
+			border-top-right-radius: 5px;
+			margin-left: -5px;
+			color: #fff;
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
+			padding: 0 28px !important;
+			height: 46px;
+			font-family: 'kghappysolid', sans-serif;
+			border: 1px solid #64B011;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+
+			@media screen and (max-width: 520px) {
+				width: 90%;
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+				margin-top: 20px;
+			}
+
+			&:hover {
+				background: #75cc16;
+			}
+
+			&:focus, &:active {
+				text-decoration: none;
+				outline: none;
+			}
+	    }
+
+	    div#gform_confirmation_message_4 {
+		    text-align: center;
+		    font-family: "open-sans", Helvetica-Neue, Helvetica, Arial, sans-serif;
+		    font-weight: 100;
+		    font-size: 16px;
+		    max-width: 750px;
+		    margin: 25px auto;
+		    line-height: 26px;
+
+		    @media screen and (max-width: 800px) {
+		    	max-width: 90%;
+		    }
+		}
+	}
+}

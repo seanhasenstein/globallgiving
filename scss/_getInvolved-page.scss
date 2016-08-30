@@ -1,0 +1,272 @@
+
+
+
+// get-involved-page.scss
+
+
+
+.getInvolved-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0 50px;
+
+    .content {
+    	text-align: center;
+
+    	h3 {
+    		font-family: 'kghappysolid';
+			font-size: 40px;
+			margin-top: 40px;
+				margin-bottom: 30px;
+				text-align: center;
+				text-transform: uppercase;
+				text-shadow: 2px 2px 0 #ddd;
+
+				@media screen and (max-width: 450px) {
+					font-size: 30px;
+					padding: 0 40px;
+				}
+    	}
+
+    	p {
+    		font-family: 'Source Sans Pro', sans-serif;
+		    font-size: 16px;
+		    font-weight: 300;
+		    max-width: 740px;
+		    margin-left: auto;
+		    margin-right: auto;
+    	}
+
+    	.get-involved-outter {
+			width: 100%;
+			padding-bottom: 100px;
+			margin-top: 5px;
+
+			.get-involved-inner {
+				max-width: 900px;
+				margin: 0 auto;
+				padding: 20px 0 100px;
+				background: #fff;
+
+				@media screen and (max-width: 900px) {
+					max-width: 600px;
+				}
+
+				@media screen and (max-width: 600px) {
+					max-width: 550px;
+				}
+
+				@media screen and (max-width: 550px) {
+					max-width: 300px;
+				}
+
+				a {
+					color: #333;
+				}
+
+				h2 {
+					font-family: 'source sans pro', sans-serif;
+					font-weight: bold;
+				    font-size: 32px;
+				    text-align: center;
+				    color: #333;
+				    margin-bottom: 30px;
+				    text-transform: uppercase;
+				}
+
+				p {
+					font-family: "open sans", sans-serif;
+				    font-size: 16px;
+				    font-weight: 300;
+				    color: #333;
+				    letter-spacing: -0.3px;
+				    max-width: 650px;
+		    		margin: 0 auto 30px;
+				}
+
+				/* entire container, keeps perspective */
+				.flip-container {
+					perspective: 1000;
+					float: left;
+					margin: 22px 25px;
+
+					@media screen and (max-width: 600px) {
+						margin: 22px 12.5px;
+					}
+
+					@media screen and (max-width: 550px) {
+						margin: 22px 25px;
+					}
+				}
+					/* flip the pane when hovered */
+					.flip-container:hover .flipper, .flip-container.hover .flipper {
+						transform: rotateY(180deg);
+					}
+
+				.flip-container, .front, .back {
+					width: 250px;
+					height: 250px;
+
+
+				}
+
+				/* flip speed goes here */
+				.flipper {
+					transition: 0.6s;
+					transform-style: preserve-3d;
+
+					position: relative;
+				}
+
+				/* hide back of pane during swap */
+				.front, .back {
+					backface-visibility: hidden;
+
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+
+				/* front pane, placed above back */
+				.front {
+					z-index: 2;
+					/* for firefox 31 */
+					transform: rotateY(0deg);
+
+					.box {
+						width: 100%;
+						float: left;
+						height: 254px;
+						/* border: 1px solid #eee; */
+						box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+						background: #f5f5f5;
+						border-radius: 8px;
+
+						h3 {
+							font-family: "kghappysolid" sans-serif;
+						    text-align: center;
+						    text-transform: uppercase;
+						    font-weight: bold;
+						    font-size: 20px;
+						    color: #333;
+						    margin-top: 19px;
+			    			margin-bottom: 135px;
+						    padding: 0 35px;
+						}
+
+						i.fa.fa-circle.fa-stack-2x {
+						    color: #fff;
+							text-shadow: 0 3px 0 #6EBA1B;
+						}
+						i.fa.fa-arrow-circle-right.fa-stack-2x.fa-inverse {
+						    color: $green;
+						}
+					}
+
+					.financial {
+						background: url('images/financial.jpg') no-repeat;
+						background-size: 100%;
+						background-position: center 72px;
+						background-color: #f5f5f5;
+					}
+					.equipment {
+						background: url('images/equipment.jpg') no-repeat;
+						background-size: 100%;
+						background-position: center 72px;
+						background-color: #f5f5f5;
+					}
+					.locations {
+						background: url('images/location.jpg') no-repeat;
+						background-size: 100%;
+						background-position: center 72px;
+						background-color: #f5f5f5;
+					}
+
+					.volunteer {
+						background: url('images/volunteer.jpg') no-repeat;
+						background-size: 100%;
+						background-position: center 72px;
+						background-color: #f5f5f5;
+					}
+
+					.collection {
+						background: url('images/organize.jpg') no-repeat;
+						background-size: 100%;
+						background-position: center 72px;
+						background-color: #f5f5f5;
+					}
+
+					.affiliate {
+						background: url('images/affiliate.jpg') no-repeat;
+						background-size: 100%;
+						background-position: center 72px;
+						background-color: #f5f5f5;
+					}
+				}
+
+				/* back, initially hidden pane */
+				.back {
+					transform: rotateY(180deg);
+
+					.box {
+						width: 100%;
+						float: left;
+						height: 254px;
+						box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+						background: #f5f5f5;
+						border-radius: 8px;
+
+						i.fa.first {
+						    font-size: 44px;
+						    margin: 29px 0 17px;
+						}
+
+						h3 {
+							font-family: "kghappysolid" sans-serif;
+						    text-align: center;
+						    text-transform: uppercase;
+						    font-weight: bold;
+						    font-size: 24px;
+						    color: #333;
+						    margin-top: 28px;
+						    margin-bottom: 10px;
+						    padding: 0 35px;
+						}
+
+						p {
+							text-align: center;
+							font-family: 'Source Sans Pro';
+							font-size: 15px;
+							font-weight: 300;
+							padding: 0 25px;
+							margin-bottom: 18px;
+							color: #333;
+							line-height: 24px;
+						}
+
+						.click {
+							background: #7ED321;
+						    color: #fff;
+						    font-size: 12px;
+						    padding: 5px 10px;
+						    border-radius: 4px;
+						    border-bottom: 3px solid #6EBA1B;
+						    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+						    font-weight: normal;
+						    letter-spacing: 0.4px;
+						    font-family: 'kghappysolid', 'Source Sans Pro', sans-serif;
+						}
+
+						i.fa.fa-circle.fa-stack-2x {
+						    color: #fff;
+							text-shadow: 0 3px 0 #6EBA1B;
+						}
+						i.fa.fa-arrow-circle-right.fa-stack-2x.fa-inverse {
+						    color: $green;
+						}
+					}
+				}
+			}
+		}
+    }
+}
